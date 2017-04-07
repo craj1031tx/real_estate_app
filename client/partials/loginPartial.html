@@ -1,0 +1,21 @@
+<!-- login partial -->
+<div>
+	<h1>Login Partial.</h1>
+	<a href="/#/blank">GO TO BLANK</a>
+	<h2>Login.</h2>
+	<div><h2 ng-repeat="error in listOfErrors" style="color:red;">{{error}}</h2></div>
+	<form>
+		Email:		<input type="text" ng-model="loginInfo.email"><br>
+		Password:	<input type="password" ng-model="loginInfo.password"><br>
+		<button ng-click="login();">Login.</button>
+	</form>
+	<h2>Register.</h2>
+	<form>
+		Email:		<input type="text" ng-model="newUserInfo.email"><br>
+		Name:		<input type="text" ng-model="newUserInfo.username"><br>
+		Password:	<input type="password" ng-model="newUserInfo.password"><br>
+		Confirm PW:	<input type="password" ng-model="newUserInfo.plaintext"><br>
+		<button ng-click="register();">Register.</button>
+	</form>
+
+</div>
